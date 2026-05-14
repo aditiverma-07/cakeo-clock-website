@@ -1,7 +1,7 @@
 # 🎂 Cake O' Clock
 
 An aesthetic and modern cake business website designed for showcasing delicious homemade cakes with a premium user experience.  
-Built with a clean UI, smooth animations, and mobile-responsive design.
+Built with a clean and aesthetic UI, smooth animations, and mobile-responsive design.
 
 ---
 
