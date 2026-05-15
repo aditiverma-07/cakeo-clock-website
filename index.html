@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake O' Clock | Delicious Homemade Cakes</title>
+    <meta name="description" content="100% Eggless, homemade custom cakes for all occasions. Pre-order only. Serving in [Placeholder City].">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Three.js for 3D Elements -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/1234567890" target="_blank" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Cake O' Clock</a>
+            <nav class="nav-links">
+                <a href="#about">About</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#why-us">Why Us</a>
+                <a href="#testimonials">Testimonials</a>
+                <div class="nav-cta">
+                    <span class="nav-badge">Pre-Order Only</span>
+                    <a href="#order" class="btn btn-outline">Order Now</a>
+                </div>
+            </nav>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div id="hero-3d-canvas"></div>
+        <div class="floating-elements">
+            <div class="sprinkle s1"></div>
+            <div class="sprinkle s2"></div>
+            <div class="sprinkle s3"></div>
+            <div class="sprinkle s4"></div>
+            <div class="sprinkle s5"></div>
+            <div class="sprinkle s6"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="fade-in-up">Delicious Homemade Cakes Made with Love</h1>
+            <p class="fade-in-up delay-1">100% Eggless | Custom Designs | Pre-Order Only</p>
+            <div class="hero-buttons fade-in-up delay-2">
+                <a href="https://wa.me/1234567890" target="_blank" class="btn btn-primary"><i class="fab fa-whatsapp"></i> Order on WhatsApp</a>
+                <a href="#gallery" class="btn btn-secondary">View Cakes</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section-padding" id="about">
+        <div class="container about-container">
+            <div class="about-image slide-in-left">
+                <img src="images/about-baker.jpg" alt="Baker making a cake" loading="lazy">
+                <div class="experience-badge">
+                    <span>100%</span>
+                    <p>Homemade</p>
+                </div>
+            </div>
+            <div class="about-text slide-in-right">
+                <h2 class="section-title">Baked with Passion, Delivered with Love</h2>
+                <p>Welcome to Cake O' Clock, where every slice tells a story. As a passionate home baker, I believe that celebrations deserve more than just a cake—they deserve a masterpiece crafted with premium ingredients, love, and utmost hygiene.</p>
+                <p>From whimsical birthday creations to elegant wedding tiers, each cake is a custom design tailored to your special moments. We specialize in 100% eggless baking, ensuring everyone can enjoy a slice of happiness.</p>
+                <ul class="about-highlights">
+                    <li><i class="fas fa-check-circle"></i> Fresh, Premium Ingredients</li>
+                    <li><i class="fas fa-check-circle"></i> Custom & Unique Designs</li>
+                    <li><i class="fas fa-check-circle"></i> Strict Hygiene Standards</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery section-padding" id="gallery">
+        <div class="container">
+            <div class="section-header text-center fade-in-up">
+                <span class="subtitle">Our Creations</span>
+                <h2 class="section-title">Cake Gallery</h2>
+                <p>Explore our latest Instagram-worthy designs.</p>
+            </div>
+            
+            <div class="gallery-filters fade-in-up delay-1">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="birthday">Birthday Cakes</button>
+                <button class="filter-btn" data-filter="wedding">Wedding Cakes</button>
+                <button class="filter-btn" data-filter="fondant">Fondant Cakes</button>
+                <button class="filter-btn" data-filter="hampers">Gift Hampers</button>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item birthday fade-in-up">
+                    <div class="gallery-img-wrapper">
+                        <img src="images/cake-1.jpg" alt="Birthday Cake" loading="lazy">
+                        <div class="gallery-overlay">
+                            <a href="#order" class="btn btn-sm btn-primary">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Floral Birthday Cake</h3>
+                        <p>Vanilla Buttercream</p>
+                    </div>
+                </div>
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item wedding fade-in-up delay-1">
+                    <div class="gallery-img-wrapper">
+                        <img src="images/cake-2.jpg" alt="Wedding Cake" loading="lazy">
+                        <div class="gallery-overlay">
+                            <a href="#order" class="btn btn-sm btn-primary">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Classic Two-Tier</h3>
+                        <p>Rich Chocolate</p>
+                    </div>
+                </div>
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item fondant fade-in-up delay-2">
+                    <div class="gallery-img-wrapper">
+                        <img src="images/cake-3.jpg" alt="Fondant Cake" loading="lazy">
+                        <div class="gallery-overlay">
+                            <a href="#order" class="btn btn-sm btn-primary">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Custom Themed Cake</h3>
+                        <p>Red Velvet</p>
+                    </div>
+                </div>
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item hampers fade-in-up">
+                    <div class="gallery-img-wrapper">
+                        <img src="images/cake-4.jpg" alt="Gift Hamper" loading="lazy">
+                        <div class="gallery-overlay">
+                            <a href="#order" class="btn btn-sm btn-primary">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Festive Cupcake Box</h3>
+                        <p>Assorted Flavors</p>
+                    </div>
+                </div>
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item birthday fade-in-up delay-1">
+                    <div class="gallery-img-wrapper">
+                        <img src="images/cake-5.jpg" alt="Birthday Cake" loading="lazy">
+                        <div class="gallery-overlay">
+                            <a href="#order" class="btn btn-sm btn-primary">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Minimalist Bento</h3>
+                        <p>Biscoff Lotus</p>
+                    </div>
+                </div>
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item wedding fade-in-up delay-2">
+                    <div class="gallery-img-wrapper">
+                        <img src="images/cake-6.jpg" alt="Wedding Cake" loading="lazy">
+                        <div class="gallery-overlay">
+                            <a href="#order" class="btn btn-sm btn-primary">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Elegant Pearl Tier</h3>
+                        <p>Lemon Raspberry</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-4 fade-in-up">
+                <a href="https://instagram.com/" target="_blank" class="btn btn-outline"><i class="fab fa-instagram"></i> View More on Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us section-padding" id="why-us">
+        <div class="container">
+            <div class="section-header text-center fade-in-up">
+                <span class="subtitle">Our Promise</span>
+                <h2 class="section-title">Why Choose Us?</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card fade-in-up">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>100% Eggless</h3>
+                    <p>Delicious, moist, and completely vegetarian cakes suitable for all your dietary needs.</p>
+                </div>
+                <div class="feature-card fade-in-up delay-1">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Custom Designs</h3>
+                    <p>Bring your vision to life. We specialize in personalized themes and intricate detailing.</p>
+                </div>
+                <div class="feature-card fade-in-up delay-2">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Freshly Made</h3>
+                    <p>Every order is baked from scratch specifically for you to ensure maximum freshness.</p>
+                </div>
+                <div class="feature-card fade-in-up delay-3">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Premium Quality</h3>
+                    <p>We use only the finest ingredients, from rich couveture chocolates to real fruit purees.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section-padding" id="testimonials">
+        <div class="container">
+            <div class="section-header text-center fade-in-up">
+                <span class="subtitle">Sweet Words</span>
+                <h2 class="section-title">Client Love</h2>
+            </div>
+            
+            <div class="testimonial-slider fade-in-up delay-1">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"The most beautiful and delicious cake I've ever ordered! The attention to detail on the custom design was incredible, and it tasted even better than it looked."</p>
+                    <div class="client-info">
+                        <h4>Priya S.</h4>
+                        <span>Birthday Cake Order</span>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Highly recommend Cake O' Clock! Finding a good eggless cake that is soft and flavorful is hard, but they nailed it. My guests couldn't believe it was eggless."</p>
+                    <div class="client-info">
+                        <h4>Rahul M.</h4>
+                        <span>Anniversary Order</span>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Ordered a gift hamper for my friend and she absolutely loved it. The packaging was premium and everything was so fresh. Will definitely order again!"</p>
+                    <div class="client-info">
+                        <h4>Ananya K.</h4>
+                        <span>Gift Hamper Order</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order & Contact Section -->
+    <section class="order section-padding" id="order">
+        <div class="container order-container">
+            <div class="order-info fade-in-up">
+                <span class="subtitle">Pre-Order Only</span>
+                <h2 class="section-title">Let's Bake Your Dream Cake!</h2>
+                <p>We require at least <strong>48 hours</strong> notice for regular orders and <strong>1 week</strong> for tiered/custom cakes. DM us on Instagram or drop a message on WhatsApp to place your order.</p>
+                
+                <div class="contact-details">
+                    <a href="tel:+1234567890" class="contact-item">
+                        <div class="icon-circle"><i class="fas fa-phone-alt"></i></div>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>+91 (123) 456-7890</p>
+                        </div>
+                    </a>
+                    <a href="https://wa.me/1234567890" target="_blank" class="contact-item">
+                        <div class="icon-circle"><i class="fab fa-whatsapp"></i></div>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p>Click to Chat</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="order-form-wrapper fade-in-up delay-1">
+                <h3>Quick Inquiry</h3>
+                <form id="orderForm" class="order-form">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="cakeType" placeholder="Type of Cake / Occasion" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" id="date" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="4" placeholder="Any specific requirements or flavor preferences?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Send on WhatsApp</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location" id="location">
+        <div class="container text-center section-padding pb-0 fade-in-up">
+            <h2 class="section-title">Where to Find Us</h2>
+            <p>Proudly serving in <strong>[City Name Placeholder]</strong> and surrounding areas. Pickup and delivery options available.</p>
+        </div>
+        <div class="map-container fade-in-up delay-1">
+            <!-- Embedded Google Map Placeholder -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112000!2d77.1000!3d28.6000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDM2JzAwLjAiTiA3N8KwMDYnMDAuMCJF!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <h3>Cake O' Clock</h3>
+                <p>Delicious homemade cakes crafted with love and the finest ingredients. 100% Eggless.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#testimonials">Reviews</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h4>Contact Info</h4>
+                <p><i class="fas fa-map-marker-alt"></i> [City Name Placeholder], India</p>
+                <p><i class="fas fa-phone-alt"></i> +91 (123) 456-7890</p>
+                <p><i class="fas fa-envelope"></i> hey@cakeoclock.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Cake O' Clock. All rights reserved. Designed with  <i class="fas fa-heart" style="color: var(--accent-red)"></i></p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
