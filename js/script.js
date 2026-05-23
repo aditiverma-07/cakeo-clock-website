@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
         renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
         canvas.appendChild(renderer.domElement);
 
-        // Lighting
+     
         const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
         scene.add(ambientLight);
 
